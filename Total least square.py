@@ -1,7 +1,5 @@
 # CV702 Week12 Assignment 2
 ## Task 1
-from ast import Param
-from turtle import shape
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy 
