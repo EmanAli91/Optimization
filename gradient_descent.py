@@ -1,15 +1,25 @@
-# Task 2
 import numpy as np
 import matplotlib.pyplot as plt 
+import math
+
+def func(x):
+    y=3*x**3+2*x**4-3
+    return y
+
+def derv_func(x):
+    derv = 9*x**2 + 8*x**3
+    return derv
+
 
 def gradient_descent(xi=-0.9):
 
-    
-    learning_rate = 0.1
+    learning_rate = 0.001
     eps = 0.0001
-    for i in range(1000):
-        derv = 9*xi**2 + 8*xi**3
+    iter = 0
+    while iter< 1000 and math.fabs(func(xi)) > eps:
+        derv = derv_func(xi)
         xi -= learning_rate*derv
+        iter+=1
 
     return xi
 
