@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy 
-from sklearn.metrics import mean_squared_error
 
 
 def plot_line(l,X,marker='ro'):
