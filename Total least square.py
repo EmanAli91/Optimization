@@ -1,8 +1,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy 
-from sklearn.metrics import mean_squared_error
 
 
 def plot_line(l,X,marker='ro'):
@@ -45,11 +43,9 @@ def total_least_square(p):
     Y_mean = np.mean(Y)
     c = (Y_mean - a * X_mean).item()
 
-
     b = 1
 
     l = [-a, b, -c]
-
 
     return l # l = [a,b,c], ax+by+c=0
 
